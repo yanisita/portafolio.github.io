@@ -184,15 +184,17 @@ h2 {
     display: inline-block;
     width: 50px;
     height: 50px;
-   margin: 0 10px;
+    margin: 0 10px;
     background-size: 50px 50px;
+    
 }
+
 .social-link.twitter {
-    background-image: url('/home/yanina/ProyectoHtml/img/twitter.svg');
+    background-image: src('E:\ProyectoHtml\img\twitter.svg');
   
 }
 .social-link.github {
-    background-image: url('/home/yanina/ProyectoHtml/img/github.svg');
+    background-image: url('.../ProyectoHtml/img/github.svg');
     
 }
 .social-link.instagram {
@@ -232,4 +234,5 @@ h2 {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    
 }
