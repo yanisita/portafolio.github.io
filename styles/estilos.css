@@ -47,6 +47,7 @@ h1 strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project strong {
     font-family: 'Fjalla One', sans-serif;
@@ -90,6 +91,7 @@ h2 {
    align-items: center;
    justify-content: space-between;
    height: 70px;
+   flex-wrap: wrap;
 }
 
 
@@ -108,7 +110,7 @@ h2 {
     background-color: #1f9ac6 ;
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
 
 }
 .hero-image {
@@ -130,6 +132,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .footer img{
     vertical-align: middle;
@@ -177,7 +180,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 
 .social-link{
@@ -189,18 +192,7 @@ h2 {
     
 }
 
-.social-link.twitter {
-    background-image: src('E:\ProyectoHtml\img\twitter.svg');
-  
-}
-.social-link.github {
-    background-image: url('.../ProyectoHtml/img/github.svg');
-    
-}
-.social-link.instagram {
-    background-image: url('/home/yanina/ProyectoHtml/img/instagram.svg');
-    
-}
+
 .form-email input {
     border-color: gray;
     border-radius: 5px;
@@ -227,7 +219,7 @@ h2 {
 }
 .container {
     
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -240,9 +232,7 @@ h2 {
   
 }
 @media screen and (max-width: 768px) {
-	body {
-        border: 20px solid red;
-    }
+	
 }
 @media screen and (max-width: 480px){
     
