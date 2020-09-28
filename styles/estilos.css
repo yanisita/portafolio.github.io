@@ -153,11 +153,12 @@ h2 {
 }
 .event {
    
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
-  
+    flex-shrink: 0;
+    overflow: hidden;
     background-color: #f4fbff;
 
 }
@@ -231,9 +232,12 @@ h2 {
     height: inherit;
     flex-wrap: inherit;
     flex: 1;
+    
 }
 @media screen and (max-width: 1024px){
-  
+  .container{
+      padding: 0 1em;
+  }
 }
 @media screen and (max-width: 767px) {
 	.header {
@@ -284,6 +288,16 @@ h2 {
     .project-description{
         font-size: .8em;
     }
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+  
+        width: 100%;
+
+        }
+  
 
 }
 @media screen and (max-width: 480px){
@@ -291,6 +305,29 @@ h2 {
        
         font-size: 12px;
 
+    }
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+
+    }
+    .contact button {
+        margin: 1em auto;
+        
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
     
 }
