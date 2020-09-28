@@ -226,13 +226,31 @@ h2 {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
-    
+    flex: 1;
 }
 @media screen and (max-width: 1024px){
   
 }
-@media screen and (max-width: 768px) {
-	
+@media screen and (max-width: 767px) {
+	.header {
+        display: block;
+        height: auto;
+
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 50px;
+        
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header .logo {
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 480px){
     
