@@ -238,6 +238,28 @@ h2 {
   .container{
       padding: 0 1em;
   }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+}
+.hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    filter: opacity(80%) blur(2px);
+
+}
+h1 {
+    font-size: 2em;
+    z-index: 2;
+    text-shadow: 1px 2px 2px #000;
+}
 }
 @media screen and (max-width: 767px) {
 	.header {
@@ -297,7 +319,7 @@ h2 {
         width: 100%;
 
         }
-  
+
 
 }
 @media screen and (max-width: 480px){
@@ -329,9 +351,20 @@ h2 {
         text-align: center;
         border: 1px solid transparent;
     }
+    h1 {
+        font-size: 1.5em;
+    }
     
 }
 
 @media screen and (max-width: 320px){
-    
+    h1 {
+        font-size: 1.2em;
+        text-shadow: 1px 2px 2px #000;
+
+    }
+
+    .hero {
+        padding: 2em 1em;
+    }
 }
