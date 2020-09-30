@@ -20,13 +20,13 @@
         <nav class= "menu">
             <ol>
                 <li>
-                    <a href="#portafolio">Portafolio</a>
+                    <a href="#portafolio" class= "link">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#experiencia">Experiencia</a>
+                    <a href="#experiencia" class= "link">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#trabajemos"> Trabajemos Juntos</a>
+                    <a href="#trabajemos" class= "link"> Trabajemos Juntos</a>
                 </li>
             </ol>
         </nav>
@@ -153,33 +153,37 @@
      <script>
          const ipad= window.matchMedia('screen and (max-width: 767px)');
          const menu= document.querySelector('.menu');
-         console.log(menu);
          const burgerButton = document.querySelector('#burguer-menu');
-         console.log(burgerButton);
+         const links = document.querySelectorAll('.link') 
         
         ipad.addListener(validation);
-        if(ipad.matches) {
-        burgerButton.addEventListener("click", hideShow)
-        }
-        function validation(event){
-            if (event.matches) {
-                console.log('true');
-                burgerButton.addEventListener('click', hideShow);
-            }else {
-                console.log('false');
-                burgerButton.removeEventListener('click',hideShow);
-            }
-        }
+        validation(ipad);
+        function validation(event) {
+      if (event.matches) {   
+        burgerButton.addEventListener('click',hideShow)
+        //lineas agregadas para recorrer los objetos y agregar un listener
+        Array.from(links).forEach( link=> { 
+          link.addEventListener('click',hideShow)
+        })
+      }
+      else {
+        burgerButton.removeEventListener('click',hideShow)
+      }
+    }
         
          function hideShow(){
              if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
+               
              } else {
                 menu.classList.add('is-active');
-             }
-            
-            
+              }
          }
+            
+        
+            
+
+         
      </script>
 
 </body>
